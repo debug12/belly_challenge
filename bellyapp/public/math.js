@@ -65,11 +65,13 @@ $(document).ready(function(){
 		var B = parseInt(current.substr(2, 1));
 		if(checkAnswer(Op, A, B, answer)){
 			score += 10;
-			$('#score').html(score);
+			var html = "Score: " + score;
+			$('#score').html(html);
+			toastr.success('Good job! 10 points for you!');
 			socket.emit('answer');
 		} else{
 			$('#answer').val("");
-			alert("wrong.");
+			toastr.error('That answer is wrong. Try again!')
 			//alert that it's wrong.
 		}
 	});

@@ -3,17 +3,16 @@
   <head>
     <title>Math is fun!</title>
     <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel='stylesheet' href='/stylesheets/toastr.css' />
     <script src="/socket.io/socket.io.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="/javascripts/toastr.js"></script>
     <script src="/math.js"></script>
   </head>
   <body>
-    <h1>Math is super fun.</h1>
-    <p>Welcome to fun math.</p>
     <div id ="title"></div>
-    <div id = "question"></div>
-    <input type = "text" id = "answer" autocomplete="off"/>
-    <input type = "button" id = "submit" value = "submit!"/>
-    <div id = "score">Score: </div>
+    <input type = "text" class = "center" id = "answer" autocomplete="off"/>
+    <input type = "button" id = "submit" class = "center" value = "submit!"/>
+    <div id = "score"></div>
   </body>
 </html>
