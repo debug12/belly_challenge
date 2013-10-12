@@ -10,11 +10,6 @@ $(document).ready(function(){
 			console.log("There is a problem with: ", data);
 		}
 	});
-	socket.on('thing', function (data){
-		if(data.message){
-			alert(data.message);
-		}
-	});
 	socket.on('next', function (data){
 		if(data.message){
 			current = data.message;
